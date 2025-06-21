@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognizer - Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        #prediction {
+            font-size: 72px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            display: inline-block;
+        }
+        #prediction-text {
+            font-size: 36px;
+            margin-top: 50px;
+            color: #4CAF50;
+        }
+        #back {
+            margin-top: 50px;
+            font-size: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 2px;
+        }
+        #back:hover {
+            color: #3e8e41;
+            border-bottom: 2px solid #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digit Recognizer</h1>
+    <div id="prediction">{{ prediction }}</div>
+    <p id="prediction-text">The predicted digit is:</p>
+    <a id="back" href="/">Back</a>
+</body>
+</html>
